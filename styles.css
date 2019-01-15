@@ -1,15 +1,30 @@
- .top_left, .top_right {
+ .top_left {
    font-family: arial, sans-serif;
    font-size: 13px;
    display: inline-block;
-   padding-left: 4px;
+   padding-left: 8px;
    color: #000;
    opacity: 0.75;
-   margin: 25px 0 0 10px;
-   box-sizing: content-box;
-   position: static; 
-   z-index: auto;
+   margin-left: 6px;
+   position: relative;
+   top: 21px;
+   left: 4px;
+   z-index: 50;
 }
+.top_right {
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  display: inline-block;
+  padding-left: 8px;
+  color: #000;
+  opacity: 0.75;
+  margin-left: 7px;
+  position: relative;
+  top: 25px;
+  left: -20px;
+  z-index: 50;
+}
+
 
 #first_link {
   padding-left: 15px;
@@ -42,16 +57,16 @@ a:hover {text-decoration: underline;}
   outline: none;
   line-height: 28px;
   padding: 0 12px;
-  margin-right: 36px;
-  margin-left: 5px;
   opacity: 1;
+  top: 0px;
+  left: -30px;
  }
 
 
  .logo {
-   padding-top: 160px;
-   padding-left: 505px;
-   margin-bottom: 25px;
+   position: absolute;
+   top: 198px;
+   left: 511px;
  
   
  }
@@ -66,7 +81,10 @@ a:hover {text-decoration: underline;}
   border-radius: 2px;
   border: none;
   margin: 0 auto;
-  padding-left: 15px;
+  padding-left: 17px;
+  position: absolute;
+  top: 316px;
+  left: 362px;
  }
 
  .search_form:hover, input:focus {
@@ -86,7 +104,10 @@ a:hover {text-decoration: underline;}
   line-height: 27px;
   cursor: pointer;
   padding: 0 16px;
-  margin: 30px 3px;
+  margin: 30px 4px 30px 3px;
+  position: relative;
+  top: 347px;
+  left: 502px;
  }
 
  .search_buttons:hover {
@@ -95,9 +116,6 @@ a:hover {text-decoration: underline;}
   color: #222;
  }
 
- .first_search_button {
-   margin-left: 499px;
- }
 
 .lang {
   font-family: arial, sans-serif;
@@ -105,15 +123,18 @@ a:hover {text-decoration: underline;}
   opacity: 0.9;
   color: #000;
   margin: 0 auto;
-  display: flex;
   width: 175px;
   padding: 0 3px;
+  position: relative;
+  top: 348px;
+  left: 7px;
 }
 
 .lang a {
   color: #1a0dab;
   opacity: 1;
   font-weight: 500;
+  padding-left: 3px;
 
 }
 
@@ -143,6 +164,8 @@ outline-width: 0px;
 white-space: nowrap;
 width: 30px;
 margin: 15px;
+top: 1px;
+left: -20px;
 }
 
 #menu a:hover {
@@ -151,9 +174,3 @@ margin: 15px;
 
 }
 
-.footer {
-  color: rgba(0, 0, 0, 0.54);
-  font-family: arial, sans-serif;
-  font-size: 13px;
-  text-align: left;
-}
